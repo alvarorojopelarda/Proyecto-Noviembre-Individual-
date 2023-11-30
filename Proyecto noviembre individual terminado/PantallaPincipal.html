@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8"> 
+    <title>LakeView</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css.css">
+    <script src="js.js"></script>
+</head>
+<body>
+    <img id="imagenFondo" style="display: none;" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiItGiUqTaBH7prQ68VvqgWh6uew75bWWv8GPYy7R_4L7D3rRb6PMnwGu_OURsF1tTeI7aD0CPWdfpcIANUMk4upJeiL2qv60hkV9eA1WJanU2jKeM1c7TwYOiIomH-PfVIT9LHQKkSrYDrZWS_yT2bZFxymJk7ENqn2UN6JsFkA2Wopw/s1600/3.jpg" alt="Imagen a pantalla completa" width="100%" height="100%">
+    <div id="container" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; justify-content: center; margin-top: 20px;"></div>
+
+    <button id="addButton" onclick="toggleForm()">Agregar Nuevo Sujeto</button>
+    <button id="cambiarfondo" onclick="mostrarImagenDeFondo()">Ocultar</button>
+    <button id="volver"  onclick="volver()">Volver</button>
+    
+
+     
+    
+    <form id="addForm" style="display: none;">
+        <label for="nombre">Nombre:</label>
+        <input type="text"  id="nombre" required><br>
+
+        <label for="tipo">Tipo:</label>
+        <select id="tipo" onchange="activarFechaDescarga()" required>
+            <option value="vivo">Vivo</option>
+            <option value="descargado">Descargado</option>
+            
+        </select><br>
+
+        <label for="dondeVive">Donde Vive:</label>
+        <input type="text" value="undefined" id="dondeVive" required><br>
+
+        <label  for="fechaDescarga">Desde Cuando Fue Descargado:</label>
+        <input type="date" id="fechaDescarga" disabled><br>
+
+        <label for="posibleCulpabilidad">Posible Culpabilidad:</label>
+        <select id="posibleCulpabilidad" required>
+            <option value="candidato">Candidato</option>
+            <option value="colaborador">Colaborador</option>
+            <option value="perpetrador">Perpetrador</option>
+        </select><br>
+
+        <label for="urlImagen">URL Imagen:</label>
+        <input type="text" value="undefined" id="urlImagen"><br>
+
+        <label for="comentarios">Comentarios:</label>
+        <textarea id="comentarios" >Undefined </textarea><br>
+
+        <button type="button" onclick="guardarSujeto()">Guardar</button>
+    </form>
+    </div>
+    <div id="tableContainer">
+    <form id="editForm" style="display: none;">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombreE" name="nombreE" required>
+        <br>
+
+        <label for="tipo">Tipo:</label>
+        <select id="tipoE" onchange="activarFechaDescarga()" required>
+            <option value="descargado">Descargado</option>
+            <option value="vivo">Vivo</option>
+        </select>
+        <br>
+
+        <label for="dondeVive">Donde Vive:</label>
+        <input type="text" id="dondeViveE" required>
+        <br>
+
+        <label for="fechaDescarga">Fecha Descarga:</label>
+        <input type="date" id="fechaDescargaE" >
+        <br>
+
+        <label for="posibleCulpabilidad">Posible Culpabilidad:</label>
+        <select id="posibleCulpabilidadE" required>
+            <option value="candidato">Candidato</option>
+            <option value="colaborador">Colaborador</option>
+            <option value="perpetrador">Perpetrador</option>
+        </select>
+        <br>
+
+        <label for="urlImagen">URL de la Imagen:</label>
+        <input type="text" id="urlImagenE" required>
+        <br>
+
+        <label for="comentarios">Comentarios:</label>
+        <textarea id="comentariosE"></textarea>
+        <br>
+
+        <button type="button" id ="guardarCambios" onclick="guardarEditados()">Guardar Cambios</button>
+
+     
+    </form>
+    </div>
+</div>
+
+
+</body>
+</html>

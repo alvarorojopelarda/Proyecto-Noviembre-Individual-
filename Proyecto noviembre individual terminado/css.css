@@ -1,0 +1,298 @@
+body {
+    background-image: url('https://png.pngtree.com/background/20230526/original/pngtree-river-in-city-buildings-futuristic-background-wallpaper-picture-image_2742493.jpg');
+    background-size: cover;
+  }
+.subject {
+    display: grid;
+    width: 100%;
+    border: 2px solid;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 20px;
+    background-image: url('https://static.vecteezy.com/system/resources/previews/003/681/134/non_2x/light-colorful-water-color-texture-background-free-photo.jpg');
+}
+
+
+.subject img {
+    width: 100%;
+    height: auto;
+}
+
+.subject div {
+    padding: 10px;
+    text-align: center;
+}
+
+.descargado {
+    border-color: green;
+}
+
+.vivo {
+    border-color: red;
+}
+
+.candidato {
+    color: green;
+}
+
+.colaborador {
+    color: orange;
+}
+
+.perpetrador {
+    color: red;
+}
+
+#addForm {
+    display: none;
+    text-align: left;
+}
+
+#addButton {
+    display: block;
+    margin: 10px auto;
+}
+
+#backgroundButton {
+  
+    margin: 10px auto;
+}
+
+#fullscreen-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+#fullscreen-image {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+#close-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+#volver {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    z-index: 9999; /* Valor alto para asegurar que se sobreponga a otros elementos */
+    
+    color: black;
+    border: none;
+    border-radius: 5px;
+}
+#contenedor {
+    display: flex; /* Cambia a flexbox para que los elementos se apilen */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en filas adicionales */
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+h1 {
+    color: #333;
+}
+
+#addForm {
+    display: none;
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#addForm label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+#addForm input,
+#addForm select,
+#addForm textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 12px;
+    box-sizing: border-box;
+}
+
+#addForm button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#addForm button:hover {
+    background-color: #45a049;
+}
+#addForm input[type="date"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 12px;
+    box-sizing: border-box;
+}
+#addButton,
+#cambiarfondo,
+#editar {
+    display: block;
+    margin: 10px auto;
+    padding: 15px 30px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+}
+
+#addButton {
+    background-color: #4caf50;
+}
+
+#cambiarfondo {
+    background-color: #2196F3;
+}
+
+#editar {
+    background-color: #FFC107;
+}
+
+#addButton:hover,
+#cambiarfondo:hover,
+#editar:hover {
+    opacity: 0.8;
+}
+
+#botones-container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+}
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+.subject {
+    font-family: 'Helvetica', sans-serif; /* Cambia 'Helvetica' por el tipo de letra que prefieras */
+}
+
+.subject div {
+    font-family: 'Times New Roman', serif; /* Cambia 'Times New Roman' por el tipo de letra que prefieras */
+}
+
+h1 {
+    font-family: 'Courier New', monospace; /* Cambia 'Courier New' por el tipo de letra que prefieras */
+}
+
+p {
+    font-family: 'Verdana', sans-serif; /* Cambia 'Verdana' por el tipo de letra que prefieras */
+}
+
+#addForm {
+    font-family: 'Georgia', serif; /* Cambia 'Georgia' por el tipo de letra que prefieras */
+}
+
+#botones-container button {
+    font-family: 'Tahoma', sans-serif; /* Cambia 'Tahoma' por el tipo de letra que prefieras */
+}
+#volver {
+    color: #2196F3;
+    background-color: purple;
+   
+}
+#editForm {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: none; /* Se inicia oculto */
+}
+
+#editForm label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+#editForm input,
+#editForm select,
+#editForm textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 12px;
+    box-sizing: border-box;
+}
+
+#editForm button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#editForm button:hover {
+    background-color: #45a049;
+}
+
+#editForm input[type="date"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 12px;
+    box-sizing: border-box;
+}
+/* Estilo básico del botón */
+button.editar-button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+/* Cambio de color al pasar el ratón sobre el botón */
+button.editar-button:hover {
+    background-color: #2980b9;
+}
+#comentariosE {
+    resize: none;
+}
